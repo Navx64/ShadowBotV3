@@ -26,8 +26,7 @@ const ytIdRegex = /(?:https?:\/\/)?(?:youtu\.be\/|(?:www\.|m\.)?youtube\.com\/(?
 async function yt(url, quality, type, bitrate, server = 'en68') {
   if (!ytIdRegex.test(url)) throw 'Invalid URL'
   let ytId = ytIdRegex.exec(url)
-  url = 'https://youtu.be/' + ytId[1]
-  let res = await post(`https://www.y2mate.com/mates/${server}/analyze/ajax`, {
+  url = 'https://youtu.be/' + ytId[1]https://www.y2meta.com/es59
     url,
     q_auto: 0,
     ajax: 1
